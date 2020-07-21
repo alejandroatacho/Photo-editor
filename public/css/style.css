@@ -1,0 +1,113 @@
+
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+.wrapper{
+ 
+    flex:1;
+
+}
+.navbar {
+
+    background: lightblue;
+    width:100%;
+    height: 100px;
+    text-align: center;
+    background-size: 100%;
+    border-radius:10px; /*change when you got better border idea, image*/
+    position: relative;
+   
+}
+.navbar ul {
+    padding-top:40px;
+}
+.navbar li{
+list-style: none;
+display:inline-block;
+margin: 0px 100px;
+margin-bottom: 25px;
+}
+.navbar a {
+text-decoration: none;
+color:black;
+
+}
+/* Image parts */
+#upload {
+    text-align: center;
+    background: lightblue;
+    border:10px;
+}
+ input {
+     margin: 2em 0;
+ }
+ #buttons {
+    display:flex;
+    justify-content: space-evenly;
+    margin: 2em 0;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding: 10px;
+
+ }
+ button {
+     background: lightblue;
+     border-radius: 10px;
+     width: 10em;
+     padding: 10px;
+ }
+ canvas{
+     max-width: 80%;
+ }
+
+ /* footer */
+footer{
+    background: lightblue;
+    padding: 0px;
+    color:black;
+    text-align:center;
+    font-size:14px;
+    bottom: 0; /*keep 0 for permanent footer at bottom, keep auto for bug fix on index.html*/
+    width: 100%;
+    height: 7rem;            /* Footer height */
+    overflow:hidden;
+    left: 0px;
+
+}
+
+
+footer.desktop li{
+    display: none;
+}
+.footer_column {
+    display: inline-block;
+
+}
+.footer_fixer{
+    text-decoration: none;
+    color:white;
+    
+}
+/*font-awesome-bootstrap fix for footer*/
+.s-m{
+    margin: auto;
+    justify-content: space-around;
+    display: flex;
+    max-width: 175px; /*Change for the "inner-margin"*/
+    font-size: 17.5px; /*change for smaller font icon as main logo-picture in the font awesome*/
+  }
+  .s-m a{
+    text-decoration: none;
+    color: #f1f1f1;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    transition: 0.4s all;
+    line-height: 45px;
+    cursor: pointer;
+    background: #314652;
+    border-radius: 50%;
+    
+  }
